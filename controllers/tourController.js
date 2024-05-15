@@ -1,9 +1,5 @@
 const Tour = require('./../models/tourModel');
 
-// const tours = JSON.parse(
-//   fs.readFileSync(`${__dirname}/../dev-data/data/tours-simple.json`)
-// );
-
 exports.getAllTours = async (req, res) => {
   try {
     const tours = await Tour.find();
